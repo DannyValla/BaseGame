@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">base-game</string>
+    <string name="app_id">853690402422</string>
+
+    <string name="game_state_running">game state running</string>
+    <string name="game_state_tutorial">game state tutorial</string>
+    <string name="game_state_won">game state won</string>
+    <string name="game_state_lost">game state lost</string>
+
+</resources>

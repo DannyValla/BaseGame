@@ -216,6 +216,7 @@ public class GameScreen implements Screen {
                 Cell cell = layer.getCell(x, y);
                 if (cell != null)
                 {
+                    Globals.sounds.get("lose").play();
                     Rectangle rect = rectPool.obtain();
                     rect.set(x, y, 1, 1);
                     tiles.add(rect);
@@ -257,6 +258,7 @@ public class GameScreen implements Screen {
         for (Rectangle tile : tiles) {
 
             if (player_rect.overlaps(tile)) {
+                Globals.sounds.get("win").play();
                 Globals.game_state = "won";
                 Globals.playServices.unlockAchievement(Globals.achievement_ids.get(stage_number));
                 Globals.preferences.putBoolean("level" + stage_number + "_complete", true);

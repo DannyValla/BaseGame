@@ -2,6 +2,7 @@ package rosalila.studio.base.game;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.math.Rectangle;
 
 import java.util.HashMap;
@@ -26,6 +27,8 @@ public class Globals {
 
     public static Preferences preferences;
 
+    public static Map<String,Sound> sounds;
+
     public static void init()
     {
         Globals.stage_selector_screen = new StageSelectorScreen();
@@ -44,5 +47,11 @@ public class Globals {
         achievement_ids.put(12,"CgkI9oynn-wYEAIQDQ");
 
         preferences = Gdx.app.getPreferences("GamePreferences");
+
+        sounds = new HashMap<String, Sound>();
+        sounds.put("select", Gdx.audio.newSound(Gdx.files.internal("sfx/select.ogg")));
+        sounds.put("back", Gdx.audio.newSound(Gdx.files.internal("sfx/back.ogg")));
+        sounds.put("win", Gdx.audio.newSound(Gdx.files.internal("sfx/win.ogg")));
+        sounds.put("lose", Gdx.audio.newSound(Gdx.files.internal("sfx/lose.ogg")));
     }
 }

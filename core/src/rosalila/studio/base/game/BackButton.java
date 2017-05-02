@@ -42,6 +42,7 @@ public class BackButton extends Actor {
             }
             public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
                 is_down = false;
+                Globals.sounds.get("back").play();
                 Globals.game.setScreen(Globals.stage_selector_screen);
             }
         });

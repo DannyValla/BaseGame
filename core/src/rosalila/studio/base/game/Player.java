@@ -75,6 +75,7 @@ public class Player {
             {
                 if(this.position.x < 48*9 && Globals.game_state.equals("tutorial"))
                 {
+                    Globals.sounds.get("win").play();
                     Globals.game_state = "running";
                 }
 
@@ -87,6 +88,7 @@ public class Player {
             {
                 if(this.position.x > 48*3 && Globals.game_state.equals("tutorial"))
                 {
+                    Globals.sounds.get("win").play();
                     Globals.game_state = "running";
                 }
 

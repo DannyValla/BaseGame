@@ -2,6 +2,7 @@ package rosalila.studio.base.game;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
@@ -17,6 +18,7 @@ public class SplashScreen implements Screen {
     SpriteBatch sprite_batch;
     Texture splash_texture;
     private OrthographicCamera camera;
+    Music music;
 
     @Override
     public void show() {
@@ -26,6 +28,10 @@ public class SplashScreen implements Screen {
         sprite_batch = new SpriteBatch();
         camera = new OrthographicCamera(Globals.VIRTUAL_WIDTH, Globals.VIRTUAL_HEIGHT);
         splash_texture = new Texture(Gdx.files.internal("splash.png"));
+
+        music = Gdx.audio.newMusic(Gdx.files.internal("music.ogg"));
+        music.setLooping(true);
+        music.play();
     }
 
     @Override
@@ -42,6 +48,7 @@ public class SplashScreen implements Screen {
         sprite_batch.end();
 
         if(Gdx.input.justTouched()) {
+            Globals.sounds.get("select").play();
             Globals.game.setScreen(Globals.stage_selector_screen);
         }
     }

@@ -50,6 +50,7 @@ public class StageButtonActor extends Actor {
             }
             public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
                 is_down = false;
+                Globals.sounds.get("select").play();
                 Globals.game.setScreen(new GameScreen(stage_number));
             }
         });

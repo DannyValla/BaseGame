@@ -31,8 +31,8 @@ public class PlayServicesButton extends Actor {
         width = this.icon.getWidth();
         height = this.icon.getHeight();
 
-        x = 0;
-        y = 800;
+        x = 60+200*1;
+        y = 0;
 
         super.setBounds(x, y, width,height);
         setTouchable(Touchable.enabled);
@@ -59,7 +59,6 @@ public class PlayServicesButton extends Actor {
     @Override
     public void draw(Batch batch, float parentAlpha)
     {
-        sprite_batch.begin();
         if(is_down)
         {
             sprite_batch.setColor(1,1,1,0.5f);
@@ -69,6 +68,5 @@ public class PlayServicesButton extends Actor {
         {
             sprite_batch.draw(icon, x, y);
         }
-        sprite_batch.end();
     }
 }

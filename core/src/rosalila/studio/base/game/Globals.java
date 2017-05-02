@@ -1,5 +1,7 @@
 package rosalila.studio.base.game;
 
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.math.Rectangle;
 
 import java.util.HashMap;
@@ -22,6 +24,8 @@ public class Globals {
 
     public static Map<Integer,String> achievement_ids;
 
+    public static Preferences preferences;
+
     public static void init()
     {
         Globals.stage_selector_screen = new StageSelectorScreen();
@@ -38,5 +42,7 @@ public class Globals {
         achievement_ids.put(10,"CgkI9oynn-wYEAIQCw");
         achievement_ids.put(11,"CgkI9oynn-wYEAIQDA");
         achievement_ids.put(12,"CgkI9oynn-wYEAIQDQ");
+
+        preferences = Gdx.app.getPreferences("GamePreferences");
     }
 }

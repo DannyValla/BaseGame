@@ -47,8 +47,8 @@ public class Player {
             last_positions.add(new Vector2(position.x,position.y));
         }
 
-        this.WIDTH = 1;
-        this.HEIGHT = 1;
+        this.WIDTH = 0.75f;
+        this.HEIGHT = 0.75f;
     }
 
     public void update(float deltaTime)

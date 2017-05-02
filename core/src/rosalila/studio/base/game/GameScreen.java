@@ -13,8 +13,10 @@ import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Pool;
+import com.badlogic.gdx.utils.viewport.ExtendViewport;
 
 /**
  * Created by turupawn on 4/21/17.
@@ -29,7 +31,13 @@ public class GameScreen implements Screen {
     Texture tutorial_swipe_right;
     SpriteBatch sprite_batch;
 
-    private OrthographicCamera hud_camera;
+    final Vector2 current_shake_position = new Vector2(0,0);
+    int shake_magnitude = 50;
+    int shake_duration_left = 0;
+
+    OrthographicCamera hud_camera;
+    Stage hud_stage;
+    SpriteBatch hud_batch;
 
     private TiledMap map;
     private OrthogonalTiledMapRenderer renderer;
@@ -66,7 +74,10 @@ public class GameScreen implements Screen {
         Globals.game_state = "running";
         sprite_batch = new SpriteBatch();
 
+        this.hud_batch = new SpriteBatch();
         hud_camera = new OrthographicCamera(Globals.VIRTUAL_WIDTH, Globals.VIRTUAL_HEIGHT);
+        ExtendViewport hud_viewport = new ExtendViewport(Globals.VIRTUAL_WIDTH, Globals.VIRTUAL_HEIGHT, hud_camera);
+        hud_stage = new Stage(hud_viewport,hud_batch);
     }
 
     @Override
@@ -96,13 +107,13 @@ public class GameScreen implements Screen {
         if(Globals.game_state.equals("won"))
         {
             sprite_batch.begin();
-            sprite_batch.draw(player_win,-720/2,-1280/2);
+            sprite_batch.draw(player_win,0,0);
             sprite_batch.end();
         }
         if(Globals.game_state.equals("lost"))
         {
             sprite_batch.begin();
-            sprite_batch.draw(player_lost,-720/2,-1280/2);
+            sprite_batch.draw(player_lost,0,0);
             sprite_batch.end();
         }
         if(Globals.game_state.equals("tutorial"))
@@ -110,22 +121,25 @@ public class GameScreen implements Screen {
             if(player.position.x < 48*3)
             {
                 sprite_batch.begin();
-                sprite_batch.draw(tutorial_swipe_right,-720/2,-1280/2);
+                sprite_batch.draw(tutorial_swipe_right,0,0);
                 sprite_batch.end();
             }
             else if(player.position.x > 48*12)
             {
                 sprite_batch.begin();
-                sprite_batch.draw(tutorial_swipe_left,-720/2,-1280/2);
+                sprite_batch.draw(tutorial_swipe_left,0,0);
                 sprite_batch.end();
             }
             else
             {
                 sprite_batch.begin();
-                sprite_batch.draw(tutorial_swipe,-720/2,-1280/2);
+                sprite_batch.draw(tutorial_swipe,0,0);
                 sprite_batch.end();
             }
         }
+
+        hud_stage.draw();
+        hud_stage.act();
     }
 
     private void update (float deltaTime)
@@ -139,11 +153,22 @@ public class GameScreen implements Screen {
 
         float velocity = 15;
 
+        if(shake_duration_left>0)
+        {
+            camera.position.x-=current_shake_position.x;
+            camera.position.y-=current_shake_position.y;
+            current_shake_position.x = ((float)Math.random()*shake_magnitude)%shake_magnitude;
+            current_shake_position.y = ((float)Math.random()*shake_magnitude)%shake_magnitude;
+            camera.position.x+=current_shake_position.x;
+            camera.position.y+=current_shake_position.y;
+            shake_duration_left--;
+        }
+
         if(Globals.game_state.equals("running"))
         {
-            tileCollisionValidation();
             camera.position.y += velocity;
             player.position.y = camera.position.y - 12*48;//- 13*48;
+            tileCollisionValidation();
         }
 
         if(Globals.game_state.equals("won"))
@@ -151,7 +176,7 @@ public class GameScreen implements Screen {
             player.position.y += velocity;
         }
 
-        if((Globals.game_state.equals("won") || Globals.game_state.equals("lost")) && Gdx.input.isTouched())
+        if(Globals.game_state.equals("won") && Gdx.input.isTouched())
         {
             Globals.game.setScreen(Globals.stage_selector_screen);
         }
@@ -160,7 +185,7 @@ public class GameScreen implements Screen {
     void tileCollisionValidation()
     {
         Rectangle player_rect = rectPool.obtain();
-        player_rect.set(player.position.x / 48, player.position.y / 48, player.WIDTH, player.HEIGHT);
+        player_rect.set(player.position.x / 48 + 0.125f, player.position.y / 48 + 0.125f, player.WIDTH, player.HEIGHT);
 
         getWallTiles((int) player_rect.x, (int) player_rect.y,
                 (int) player_rect.x + (int) player_rect.width, (int) player_rect.y + (int) player_rect.height,
@@ -194,6 +219,10 @@ public class GameScreen implements Screen {
                     Rectangle rect = rectPool.obtain();
                     rect.set(x, y, 1, 1);
                     tiles.add(rect);
+                    shake_duration_left = 25;
+                    Gdx.input.setInputProcessor(hud_stage);
+                    hud_stage.addActor(new RestartButton(stage_number));
+                    hud_stage.addActor(new BackButton());
                 }
             }
         }
@@ -230,6 +259,8 @@ public class GameScreen implements Screen {
             if (player_rect.overlaps(tile)) {
                 Globals.game_state = "won";
                 Globals.playServices.unlockAchievement(Globals.achievement_ids.get(stage_number));
+                Globals.preferences.putBoolean("level" + stage_number + "_complete", true);
+                Globals.preferences.flush();
             }
         }
     }

@@ -40,11 +40,14 @@ public class StageSelectorScreen implements Screen {
         background = new Texture("stage_select_background.png");
 
         Gdx.input.setInputProcessor(stage);
-        for(int i=0;i<12;i++)
+        for(int i=0;i<Globals.total_stages;i++)
         {
             StageButtonActor stage_button_actor = new StageButtonActor(i + 1,sprite_batch);
             stage.addActor(stage_button_actor);
         }
+        stage.addActor(new LeftButton(sprite_batch));
+        stage.addActor(new RightButton(sprite_batch));
+
         stage.addActor(new PlayServicesButton(sprite_batch));
     }
 

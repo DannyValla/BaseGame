@@ -37,7 +37,7 @@ public class StageButtonActor extends Actor {
         height = this.icon.getHeight();
 
         x = 60 + (stage_number-1)%3 * width;
-        y = 800-((stage_number-1)/3) * height;
+        y = 800-((stage_number-1)/3)%3 * height;
 
         super.setBounds(x, y, width,height);
         setTouchable(Touchable.enabled);
@@ -59,19 +59,29 @@ public class StageButtonActor extends Actor {
     @Override
     public void act(float delta)
     {
-
+        if(isOnScreen())
+            setTouchable(Touchable.enabled);
+        else
+            setTouchable(Touchable.disabled);
     }
 
     @Override
     public void draw(Batch batch, float parentAlpha)
     {
-        if(is_down) {
-            sprite_batch.setColor(1, 1, 1, 0.5f);
+        if(isOnScreen()) {
+            if (is_down) {
+                sprite_batch.setColor(1, 1, 1, 0.5f);
+            }
+            if (Globals.preferences.getBoolean("level" + stage_number + "_complete", false))
+                sprite_batch.draw(icon_complete, x, y);
+            else
+                sprite_batch.draw(icon, x, y);
+            sprite_batch.setColor(1, 1, 1, 1);
         }
-        if(Globals.preferences.getBoolean("level" + stage_number + "_complete", false))
-            sprite_batch.draw(icon_complete, x, y);
-        else
-            sprite_batch.draw(icon, x, y);
-        sprite_batch.setColor(1,1,1,1);
+    }
+
+    boolean isOnScreen()
+    {
+        return stage_number>Globals.current_stage_page*Globals.stages_per_page && stage_number<=(Globals.current_stage_page+1)*Globals.stages_per_page;
     }
 }

@@ -29,6 +29,10 @@ public class Globals {
 
     public static Map<String,Sound> sounds;
 
+    public static int current_stage_page = 0;
+    public static int stages_per_page = 9;
+    public static int total_stages = 27;
+
     public static void init()
     {
         Globals.stage_selector_screen = new StageSelectorScreen();

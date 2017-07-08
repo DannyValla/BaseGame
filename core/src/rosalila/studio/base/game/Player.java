@@ -26,8 +26,7 @@ public class Player {
 
     ArrayList<Vector2> last_positions;
 
-    boolean last_frame_touch_up = true;
-    double last_frame_swipe_x = 0;
+    boolean can_swipe_again = true;
 
     double destination_x;
     double current_x;
@@ -62,42 +61,39 @@ public class Player {
         if(Globals.game_state.equals("won") || Globals.game_state.equals("lost"))
             return;
 
-        if(Gdx.input.isTouched())
-        {
-            last_frame_swipe_x = Gdx.input.getDeltaX();
-            last_frame_touch_up = false;
-        }
-        else if(!last_frame_touch_up)
-        {
-            last_frame_touch_up = true;
+        if(Gdx.input.isTouched() && can_swipe_again) {
+            if (Gdx.input.getDeltaX() >= 1) {
 
-            if(last_frame_swipe_x >= 1)
-            {
-                if(this.position.x < 48*9 && Globals.game_state.equals("tutorial"))
-                {
+                can_swipe_again = false;
+
+                if (this.position.x < 48 * 9 && Globals.game_state.equals("tutorial")) {
                     Globals.sounds.get("win").play();
                     Globals.game_state = "running";
                 }
 
-                this.destination_x += 6*48;
-                if(this.destination_x > 13*48)
-                {
+                this.destination_x += 6 * 48;
+                if (this.destination_x > 13 * 48) {
                     this.destination_x = 13 * 48;
                 }
-            }else if(last_frame_swipe_x <= -1)
-            {
-                if(this.position.x > 48*3 && Globals.game_state.equals("tutorial"))
-                {
+            } else if (Gdx.input.getDeltaX() <= -1) {
+
+                can_swipe_again = false;
+
+                if (this.position.x > 48 * 3 && Globals.game_state.equals("tutorial")) {
                     Globals.sounds.get("win").play();
                     Globals.game_state = "running";
                 }
 
-                this.destination_x -= 6*48;
-                if(this.destination_x < 1*48)
-                {
+                this.destination_x -= 6 * 48;
+                if (this.destination_x < 1 * 48) {
                     this.destination_x = 1 * 48;
                 }
             }
+        }
+
+        if(!Gdx.input.isTouched())
+        {
+            can_swipe_again = true;
         }
         //this.current_x = this.destination_x;
         if(Globals.game_state.equals("running"))

@@ -37,6 +37,8 @@ public class GameScreen implements Screen {
     Stage hud_stage;
     SpriteBatch hud_batch;
 
+    boolean exit_touch_down;
+
     private TiledMap map;
     private OrthogonalTiledMapRenderer renderer;
     private OrthographicCamera camera;
@@ -71,6 +73,8 @@ public class GameScreen implements Screen {
         hud_camera = new OrthographicCamera(Globals.VIRTUAL_WIDTH, Globals.VIRTUAL_HEIGHT);
         ExtendViewport hud_viewport = new ExtendViewport(Globals.VIRTUAL_WIDTH, Globals.VIRTUAL_HEIGHT, hud_camera);
         hud_stage = new Stage(hud_viewport,hud_batch);
+
+        exit_touch_down = false;
     }
 
     @Override
@@ -170,6 +174,11 @@ public class GameScreen implements Screen {
         }
 
         if(Globals.game_state.equals("won") && Gdx.input.isTouched())
+        {
+            exit_touch_down = true;
+        }
+
+        if(exit_touch_down && !Gdx.input.isTouched())
         {
             Globals.game.setScreen(Globals.stage_selector_screen);
         }

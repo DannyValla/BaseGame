@@ -55,8 +55,6 @@ public class StageSelectorScreen implements Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act(delta);
 
-        
-
         sprite_batch.begin();
         sprite_batch.draw(background,0,0);
         sprite_batch.end();

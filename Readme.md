@@ -1,7 +1,7 @@
 Rosalila LibGDX Boilerplate
 ===========================
 
-Rosalila LibGDX Boilerplate is project made to develop and release mobile games fast.
+Rosalila LibGDX Boilerplate is a project made to develop and release mobile games fast.
 
 ## Keywords
 

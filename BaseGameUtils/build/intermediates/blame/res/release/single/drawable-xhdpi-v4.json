@@ -164,12 +164,12 @@
         "source": "/home/turupawn/Projects/Android/BaseGame/BaseGameUtils/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_ic_commit_search_api_holo_dark.png"
     },
     {
-        "merged": "/home/turupawn/Projects/Android/BaseGame/BaseGameUtils/build/intermediates/res/merged/release/drawable-xhdpi-v4/common_full_open_on_phone.png",
-        "source": "/home/turupawn/Projects/Android/BaseGame/BaseGameUtils/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xhdpi/common_full_open_on_phone.png"
-    },
-    {
         "merged": "/home/turupawn/Projects/Android/BaseGame/BaseGameUtils/build/intermediates/res/merged/release/drawable-xhdpi-v4/common_plus_signin_btn_text_light_disabled.9.png",
         "source": "/home/turupawn/Projects/Android/BaseGame/BaseGameUtils/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xhdpi/common_plus_signin_btn_text_light_disabled.9.png"
+    },
+    {
+        "merged": "/home/turupawn/Projects/Android/BaseGame/BaseGameUtils/build/intermediates/res/merged/release/drawable-xhdpi-v4/common_full_open_on_phone.png",
+        "source": "/home/turupawn/Projects/Android/BaseGame/BaseGameUtils/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xhdpi/common_full_open_on_phone.png"
     },
     {
         "merged": "/home/turupawn/Projects/Android/BaseGame/BaseGameUtils/build/intermediates/res/merged/release/drawable-xhdpi-v4/common_plus_signin_btn_text_light_focused.9.png",

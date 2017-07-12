@@ -14,4 +14,6 @@ public interface PlayServices
     public void showAchievement();
     public void showScore();
     public boolean isSignedIn();
+
+    public void playAd();
 }

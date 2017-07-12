@@ -376,12 +376,12 @@
         "source": "/home/turupawn/Projects/Android/BaseGame/BaseGameUtils/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xhdpi/common_google_signin_btn_text_light_disabled.9.png"
     },
     {
-        "merged": "/home/turupawn/Projects/Android/BaseGame/BaseGameUtils/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_tab_selected_focused_holo.9.png",
-        "source": "/home/turupawn/Projects/Android/BaseGame/BaseGameUtils/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_tab_selected_focused_holo.9.png"
-    },
-    {
         "merged": "/home/turupawn/Projects/Android/BaseGame/BaseGameUtils/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_google_signin_btn_text_dark_focused.9.png",
         "source": "/home/turupawn/Projects/Android/BaseGame/BaseGameUtils/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable-xhdpi/common_google_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "/home/turupawn/Projects/Android/BaseGame/BaseGameUtils/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_tab_selected_focused_holo.9.png",
+        "source": "/home/turupawn/Projects/Android/BaseGame/BaseGameUtils/build/intermediates/exploded-aar/com.android.support/appcompat-v7/20.0.0/res/drawable-xhdpi/abc_tab_selected_focused_holo.9.png"
     },
     {
         "merged": "/home/turupawn/Projects/Android/BaseGame/BaseGameUtils/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ab_bottom_solid_dark_holo.9.png",

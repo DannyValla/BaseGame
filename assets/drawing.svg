@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="-4020.9154"
-     inkscape:cy="-392.30864"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="211.32281"
+     inkscape:cy="-1068.7945"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -156,24 +156,8 @@
        x="0"
        y="-227.63782"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <text
-       xml:space="preserve"
-       style="font-size:136.81733704px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
-       x="693.35693"
-       y="359.69958"
-       id="text4248-4"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4250-2"
-         x="693.35693"
-         y="359.69958"
-         style="text-align:end;text-anchor:end;fill:#ffffff">rumor</tspan><tspan
-         sodipodi:role="line"
-         x="693.35693"
-         y="530.72131"
-         id="tspan4275"
-         style="text-align:end;text-anchor:end;fill:#ffffff">failed</tspan></text>
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="ad_screen_background.png" />
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -1690,56 +1674,6 @@
          x="3194.7173"
          sodipodi:role="line"
          style="font-size:48px;fill:#ffffff">tap to continue</tspan></text>
-    <g
-       id="g3262"
-       transform="matrix(1.2215945,0,0,1.2215945,-2405.5111,-1620.2753)"
-       inkscape:export-filename="button_retry.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <text
-         sodipodi:linespacing="125%"
-         id="text3275"
-         y="1617.3615"
-         x="2052.5457"
-         style="font-size:45.75718307px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
-         xml:space="preserve"><tspan
-           y="1617.3615"
-           x="2052.5457"
-           id="tspan3277"
-           sodipodi:role="line">retry</tspan></text>
-      <rect
-         y="1568.0764"
-         x="1998.5714"
-         height="75.714287"
-         width="207.14285"
-         id="rect3279"
-         style="color:#000000;fill:none;stroke:#ffffff;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    </g>
-    <g
-       id="g3267"
-       transform="matrix(1.2215945,0,0,1.2215945,-2405.5111,-1662.5014)"
-       inkscape:export-filename="button_back.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
-      <text
-         xml:space="preserve"
-         style="font-size:45.75718307px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
-         x="2053.9558"
-         y="1770.0829"
-         id="text4049"
-         sodipodi:linespacing="125%"><tspan
-           sodipodi:role="line"
-           id="tspan4051"
-           x="2053.9558"
-           y="1770.0829">back</tspan></text>
-      <rect
-         style="color:#000000;fill:none;stroke:#ffffff;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-         id="rect4053"
-         width="207.14285"
-         height="75.714287"
-         x="1998.5714"
-         y="1715.5587" />
-    </g>
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -2621,13 +2555,13 @@
     <rect
        style="color:#000000;fill:#ff00ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3577"
-       width="199.78198"
+       width="200"
        height="200"
        x="-5262.3589"
        y="1403.1322"
        inkscape:export-filename="13.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-xdpi="230.39999"
+       inkscape:export-ydpi="230.39999" />
     <text
        xml:space="preserve"
        style="font-size:113.26526642px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
@@ -2653,8 +2587,8 @@
          id="tspan3585"
          sodipodi:role="line">complete!</tspan></text>
     <rect
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="230.39999"
+       inkscape:export-xdpi="230.39999"
        inkscape:export-filename="14.png"
        y="1403.1322"
        x="-5038.6694"
@@ -2692,8 +2626,8 @@
        x="-4814.7314"
        y="1403.1322"
        inkscape:export-filename="15.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-xdpi="230.39999"
+       inkscape:export-ydpi="230.39999" />
     <text
        xml:space="preserve"
        style="font-size:113.32704926px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
@@ -2717,13 +2651,13 @@
          id="tspan3605"
          sodipodi:role="line">complete!</tspan></text>
     <rect
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="230.39999"
+       inkscape:export-xdpi="230.39999"
        inkscape:export-filename="16.png"
        y="1637.418"
        x="-5262.3589"
        height="200"
-       width="199.78198"
+       width="200"
        id="rect3607"
        style="color:#000000;fill:#ff00ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <text
@@ -2758,8 +2692,8 @@
        x="-5038.6694"
        y="1637.418"
        inkscape:export-filename="17.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-xdpi="230.39999"
+       inkscape:export-ydpi="230.39999" />
     <text
        xml:space="preserve"
        style="font-size:113.32704163px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
@@ -2783,8 +2717,8 @@
          id="tspan3625"
          sodipodi:role="line">complete!</tspan></text>
     <rect
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="230.39999"
+       inkscape:export-xdpi="230.39999"
        inkscape:export-filename="18.png"
        y="1637.418"
        x="-4814.7314"
@@ -2817,13 +2751,13 @@
     <rect
        style="color:#000000;fill:#ff00ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3637"
-       width="199.78198"
+       width="200.10001"
        height="200"
        x="-4543.7876"
        y="1160.275"
        inkscape:export-filename="19.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-xdpi="230.28"
+       inkscape:export-ydpi="230.28" />
     <text
        xml:space="preserve"
        style="font-size:113.26526642px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
@@ -2849,8 +2783,8 @@
          id="tspan3645"
          sodipodi:role="line">complete!</tspan></text>
     <rect
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="230.39999"
+       inkscape:export-xdpi="230.39999"
        inkscape:export-filename="20.png"
        y="1160.275"
        x="-4320.0981"
@@ -2888,8 +2822,8 @@
        x="-4096.1602"
        y="1160.275"
        inkscape:export-filename="21.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-xdpi="230.39999"
+       inkscape:export-ydpi="230.39999" />
     <text
        xml:space="preserve"
        style="font-size:113.32704926px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
@@ -2913,13 +2847,13 @@
          id="tspan3665"
          sodipodi:role="line">complete!</tspan></text>
     <rect
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="230.39999"
+       inkscape:export-xdpi="230.39999"
        inkscape:export-filename="22.png"
        y="1403.1322"
        x="-4543.7876"
        height="200"
-       width="199.78198"
+       width="200"
        id="rect3667"
        style="color:#000000;fill:#ff00ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
     <text
@@ -2954,8 +2888,8 @@
        x="-4320.0981"
        y="1403.1322"
        inkscape:export-filename="23.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-xdpi="230.39999"
+       inkscape:export-ydpi="230.39999" />
     <text
        xml:space="preserve"
        style="font-size:113.32704163px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
@@ -2979,8 +2913,8 @@
          id="tspan3685"
          sodipodi:role="line">complete!</tspan></text>
     <rect
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="230.39999"
+       inkscape:export-xdpi="230.39999"
        inkscape:export-filename="24.png"
        y="1403.1322"
        x="-4096.1602"
@@ -3013,13 +2947,13 @@
     <rect
        style="color:#000000;fill:#ff00ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3697"
-       width="199.78198"
+       width="200"
        height="200"
        x="-4543.7876"
        y="1637.418"
        inkscape:export-filename="25.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-xdpi="230.39999"
+       inkscape:export-ydpi="230.39999" />
     <text
        xml:space="preserve"
        style="font-size:113.26526642px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
@@ -3045,8 +2979,8 @@
          id="tspan3705"
          sodipodi:role="line">complete!</tspan></text>
     <rect
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="230.39999"
+       inkscape:export-xdpi="230.39999"
        inkscape:export-filename="26.png"
        y="1637.418"
        x="-4320.0981"
@@ -3084,8 +3018,8 @@
        x="-4096.1602"
        y="1637.418"
        inkscape:export-filename="27.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-xdpi="230.39999"
+       inkscape:export-ydpi="230.39999" />
     <text
        xml:space="preserve"
        style="font-size:113.32704926px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
@@ -3108,5 +3042,223 @@
          x="-4055.1038"
          id="tspan3725"
          sodipodi:role="line">complete!</tspan></text>
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       y="-227.63782"
+       x="1514.2858"
+       height="1280"
+       width="720"
+       id="rect3447"
+       style="color:#000000;fill:#00ffff;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3449"
+       y="359.69958"
+       x="2207.6426"
+       style="font-size:136.81733704px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+       xml:space="preserve"><tspan
+         style="text-align:end;text-anchor:end;fill:#ffffff"
+         y="359.69958"
+         x="2207.6426"
+         id="tspan3451"
+         sodipodi:role="line">rumor</tspan><tspan
+         style="text-align:end;text-anchor:end;fill:#ffffff"
+         id="tspan3453"
+         y="530.72125"
+         x="2207.6426"
+         sodipodi:role="line">failed</tspan></text>
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="button_retry.png"
+       transform="matrix(1.2215945,0,0,1.2215945,-891.22538,-1620.2753)"
+       id="g3455">
+      <text
+         xml:space="preserve"
+         style="font-size:45.75718307px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+         x="2052.5457"
+         y="1617.3615"
+         id="text3457"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3459"
+           x="2052.5457"
+           y="1617.3615">retry</tspan></text>
+      <rect
+         style="color:#000000;fill:none;stroke:#ffffff;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3461"
+         width="207.14285"
+         height="75.714287"
+         x="1998.5714"
+         y="1568.0764" />
+    </g>
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="button_back.png"
+       transform="matrix(1.2215945,0,0,1.2215945,-891.22538,-1662.5014)"
+       id="g3463">
+      <text
+         sodipodi:linespacing="125%"
+         id="text3466"
+         y="1770.0829"
+         x="2053.9558"
+         style="font-size:45.75718307px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+         xml:space="preserve"><tspan
+           y="1770.0829"
+           x="2053.9558"
+           id="tspan3468"
+           sodipodi:role="line">back</tspan></text>
+      <rect
+         y="1715.5587"
+         x="1998.5714"
+         height="75.714287"
+         width="207.14285"
+         id="rect3470"
+         style="color:#000000;fill:none;stroke:#ffffff;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <text
+       inkscape:export-ydpi="90.268654"
+       inkscape:export-xdpi="90.268654"
+       inkscape:export-filename="play_black_button.png"
+       sodipodi:linespacing="125%"
+       id="text3472"
+       y="687.37128"
+       x="1591.9274"
+       style="font-size:55.8967247px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+       xml:space="preserve"><tspan
+         y="687.37128"
+         x="1591.9274"
+         id="tspan3474"
+         sodipodi:role="line">support</tspan></text>
+    <rect
+       inkscape:export-ydpi="90.268654"
+       inkscape:export-xdpi="90.268654"
+       inkscape:export-filename="play_black_button.png"
+       y="627.16498"
+       x="1561.0728"
+       height="92.492157"
+       width="253.04457"
+       id="rect3476"
+       style="color:#000000;fill:none;stroke:#000000;stroke-width:12.21594524;stroke-miterlimit:4;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       xml:space="preserve"
+       style="font-size:97.4972229px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+       x="700.66132"
+       y="-19.225416"
+       id="text4248-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="700.66132"
+         y="-19.225416"
+         id="tspan4275"
+         style="text-align:end;text-anchor:end;fill:#000000">do you like</tspan><tspan
+         sodipodi:role="line"
+         x="700.66132"
+         y="102.64611"
+         style="text-align:end;text-anchor:end;fill:#000000"
+         id="tspan3481">swipe rumors?</tspan></text>
+    <g
+       id="g3267"
+       transform="matrix(1.2215945,0,0,1.2215945,-2003.6247,-1278.5607)"
+       inkscape:export-filename="button_back.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <text
+         xml:space="preserve"
+         style="font-size:45.75718307px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+         x="2053.9558"
+         y="1770.0829"
+         id="text4049"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4051"
+           x="2053.9558"
+           y="1770.0829">back</tspan></text>
+      <rect
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect4053"
+         width="207.14285"
+         height="75.714287"
+         x="1998.5714"
+         y="1715.5587" />
+    </g>
+    <g
+       id="g3504"
+       transform="translate(391.03212,52.074981)">
+      <text
+         inkscape:export-ydpi="90.268654"
+         inkscape:export-xdpi="90.268654"
+         inkscape:export-filename="play_black_button.png"
+         sodipodi:linespacing="125%"
+         id="text3446"
+         y="687.37128"
+         x="77.641602"
+         style="font-size:55.8967247px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+         xml:space="preserve"><tspan
+           y="687.37128"
+           x="77.641602"
+           id="tspan3448"
+           sodipodi:role="line">support</tspan></text>
+      <rect
+         inkscape:export-ydpi="90.268654"
+         inkscape:export-xdpi="90.268654"
+         inkscape:export-filename="play_black_button.png"
+         y="627.16498"
+         x="46.787014"
+         height="92.492157"
+         width="253.04457"
+         id="rect3450"
+         style="color:#000000;fill:none;stroke:#000000;stroke-width:12.21594524;stroke-miterlimit:4;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:48.23981857px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Lato;-inkscape-font-specification:Lato"
+       x="696.97168"
+       y="357.36841"
+       id="text4248-9-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="709.31427"
+         y="357.36841"
+         style="text-align:end;text-anchor:end"
+         id="tspan3562">please support us to continue </tspan><tspan
+         sodipodi:role="line"
+         x="696.97168"
+         y="417.66818"
+         style="text-align:end;text-anchor:end"
+         id="tspan3578">making more games</tspan><tspan
+         sodipodi:role="line"
+         x="696.97168"
+         y="477.96796"
+         style="text-align:end;text-anchor:end"
+         id="tspan3564">by watching an ad</tspan></text>
+    <rect
+       inkscape:export-ydpi="180"
+       inkscape:export-xdpi="180"
+       inkscape:export-filename="heart_button.png"
+       y="2060.8413"
+       x="-603.92096"
+       height="200"
+       width="199.99998"
+       id="rect3632"
+       style="color:#000000;fill:#ff00ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <g
+       id="g3675"
+       transform="matrix(0.79011115,0,0,0.79011115,-105.83631,453.79366)">
+      <path
+         style="fill:#000000;stroke:#000000;stroke-width:1.77826595px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m -504.48287,2117.7868 c 0,0 13.48911,-30.9054 47.31457,-18.3213 75.01882,27.9093 -47.31457,125.1136 -47.31457,125.1136"
+         id="path3663"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="csc" />
+      <path
+         sodipodi:nodetypes="csc"
+         inkscape:connector-curvature="0"
+         id="path3673"
+         d="m -503.18462,2117.7868 c 0,0 -13.48911,-30.9054 -47.31457,-18.3213 -75.01882,27.9093 47.31457,125.1136 47.31457,125.1136"
+         style="fill:#000000;stroke:#000000;stroke-width:1.77826595px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
   </g>
 </svg>

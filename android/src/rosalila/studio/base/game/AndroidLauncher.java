@@ -9,6 +9,7 @@ import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.google.android.gms.games.Games;
 import com.google.example.games.basegameutils.GameHelper;
+import com.vungle.publisher.VunglePub;
 
 import rosalila.studio.base.game.MyGdxGame;
 
@@ -17,13 +18,15 @@ public class AndroidLauncher extends AndroidApplication implements PlayServices 
 	private GameHelper gameHelper;
 	private final static int requestCode = 1;
 
+	final VunglePub vunglePub = VunglePub.getInstance();
+
 	@Override
 	public void onCreate (Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		AndroidApplicationConfiguration config = new AndroidApplicationConfiguration();
 
 		gameHelper = new GameHelper(this, GameHelper.CLIENT_GAMES);
-		gameHelper.enableDebugLog(false);
+		gameHelper.enableDebugLog(true);
 
 		GameHelper.GameHelperListener gameHelperListener = new GameHelper.GameHelperListener()
 		{
@@ -34,7 +37,17 @@ public class AndroidLauncher extends AndroidApplication implements PlayServices 
 			public void onSignInSucceeded(){ }
 		};
 
-		gameHelper.setup(gameHelperListener);
+		try
+		{
+			gameHelper.setup(gameHelperListener);
+		}
+		catch (Exception e)
+		{
+			Gdx.app.log("MainActivity", "Setup failed: " + e.getMessage() + ".");
+		}
+
+		final String app_id = "5964d5048c34b1fa10000ba9";
+		vunglePub.init(this, app_id);
 
 		initialize(new MyGdxGame(this), config);
 	}
@@ -43,21 +56,57 @@ public class AndroidLauncher extends AndroidApplication implements PlayServices 
 	public void onStart()
 	{
 		super.onStart();
-		gameHelper.onStart(this);
+
+		try
+		{
+			gameHelper.onStart(this);
+		}
+		catch (Exception e)
+		{
+			Gdx.app.log("MainActivity", "onStart failed: " + e.getMessage() + ".");
+		}
 	}
 
 	@Override
 	public void onStop()
 	{
 		super.onStop();
-		gameHelper.onStop();
+
+		try
+		{
+			gameHelper.onStop();
+		}
+		catch (Exception e)
+		{
+			Gdx.app.log("MainActivity", "onStop failed: " + e.getMessage() + ".");
+		}
+	}
+
+	@Override
+	protected void onPause() {
+		super.onPause();
+		vunglePub.onPause();
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		vunglePub.onResume();
 	}
 
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data)
 	{
 		super.onActivityResult(requestCode, resultCode, data);
-		gameHelper.onActivityResult(requestCode, resultCode, data);
+
+		try
+		{
+			gameHelper.onActivityResult(requestCode, resultCode, data);
+		}
+		catch (Exception e)
+		{
+			Gdx.app.log("MainActivity", "Log in failed: " + e.getMessage() + ".");
+		}
 	}
 
 	@Override
@@ -65,11 +114,9 @@ public class AndroidLauncher extends AndroidApplication implements PlayServices 
 	{
 		try
 		{
-			runOnUiThread(new Runnable()
-			{
+			runOnUiThread(new Runnable() {
 				@Override
-				public void run()
-				{
+				public void run() {
 					gameHelper.beginUserInitiatedSignIn();
 				}
 			});
@@ -98,6 +145,12 @@ public class AndroidLauncher extends AndroidApplication implements PlayServices 
 		{
 			Gdx.app.log("MainActivity", "Log out failed: " + e.getMessage() + ".");
 		}
+	}
+
+	@Override
+	public void playAd()
+	{
+		vunglePub.playAd();
 	}
 
 	@Override

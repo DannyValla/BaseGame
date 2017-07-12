@@ -47,6 +47,13 @@ project(":desktop") {
 }
 
 project(":android") {
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
     apply plugin: "android"
 
     configurations { natives }
@@ -66,6 +73,11 @@ project(":android") {
         natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-x86"
         natives "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-x86_64"
         compile project(':BaseGameUtils')
+        compile name: "dagger-2.7"
+        compile name: "eventbus-2.2.1"
+        compile name: "javax.inject-1"
+        compile name: "rxjava-1.2.0"
+        compile name: "vungle-publisher-adaptive-id-4.1.0"
     }
 }
 

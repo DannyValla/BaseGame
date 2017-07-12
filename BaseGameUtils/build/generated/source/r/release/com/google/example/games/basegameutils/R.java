@@ -2255,7 +2255,7 @@ containing a value of this type.
          */
         public static final int[] MenuView = {
             0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e,
-            0x0101012f, 0x01010130, 0x01010131, 0x01160055
+            0x0101012f, 0x01010130, 0x01010131, 0x0111009f
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#headerBackground}

@@ -52,6 +52,10 @@ public class DesktopLauncher implements PlayServices {
 		return false;
 	}
 
+	public void playAd() {
+		System.out.print("playAd");
+	}
+
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		config.width=540;

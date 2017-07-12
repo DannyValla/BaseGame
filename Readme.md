@@ -7,7 +7,7 @@ Rosalila LibGDX Boilerplate is project made to develop and release mobile games 
 
 This project is being developed with the following values ordered by importance:
 
-1. **Fast development**: No need to make technical research or testing, just focus on making
+1. **Fast development**: No need to make technical research or testing, just focus on making the game
 2. **Scalability**: Ability to include new features
 3. **Accessibility**: Easy to be tested and published
 
